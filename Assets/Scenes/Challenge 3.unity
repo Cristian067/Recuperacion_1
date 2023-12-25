@@ -1696,7 +1696,7 @@ MonoBehaviour:
   hurt: {fileID: 1171260740}
   camAudio: {fileID: 534669906}
   get_sfx: {fileID: 8300000, guid: 13844e2b5023d654f8cf0b9d6723f22b, type: 3}
-  hurt_sfx: {fileID: 0}
+  hurt_sfx: {fileID: 8300000, guid: f82d2703bbd8ac74d9b0c1f655940488, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
