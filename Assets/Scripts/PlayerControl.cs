@@ -51,10 +51,10 @@ public class PlayerControl : MonoBehaviour
     void Update()
     {
 
-        pointsText.text = $"Points: {points}";
+        pointsText.text = $"Score: {points}";
         highText.text = $"Highscore: {highscore}";
 
-        transform.Rotate(new Vector3(0, 1, 0) * 30 * Time.deltaTime);
+        transform.Rotate(new Vector3(0, 1, 0) * 50 * Time.deltaTime);
         
         if(transform.position.y > 14)
         {
@@ -95,7 +95,7 @@ public class PlayerControl : MonoBehaviour
                 PlayerPrefs.SetInt("highscore", points);
             }
 
-
+            
         }
 
 
@@ -107,6 +107,7 @@ public class PlayerControl : MonoBehaviour
         if (collision.gameObject.tag == "Coin")
         {
             points++;
+            Debug.Log($"Score: {points}");
             get.Play();
             audio.PlayOneShot(get_sfx);
             Destroy(collision.gameObject);
